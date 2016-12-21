@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/semaurer/ToTheDen/issues"
   },
-  "homepage": "https://github.com/semaurer/ToTheDen#readme"
+  "homepage": "https://github.com/semaurer/ToTheDen#readme",
+  "dependencies": {
+    "webpack": "^1.14.0"
+  }
 }

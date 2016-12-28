@@ -3,11 +3,11 @@ caveImage.src = "images/cave_sprites.png";
 
 function caveAnimations() {
   return {
-    width: 35,
+    width: 60,
     height: 40,
     image: caveImage,
-    startX: 72,
-    startY: 5
+    startX: 113,
+    startY: 193
   };
 }
 

@@ -47,7 +47,7 @@ function explosionAnimations() {
     },
     expl7: {
       width: 232,
-      height: 256,
+      height: 130,
       image: explosionImage,
       startX: 13,
       startY: 256

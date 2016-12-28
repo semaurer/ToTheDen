@@ -10,6 +10,13 @@ function BearAnimations() {
       startX: 5,
       startY: 125
     },
+    bearUp2: {
+      width: 40,
+      height: 40,
+      image: bearImage,
+      startX: 47,
+      startY: 125
+    },
     bearLeft1: {
       width: 42,
       height: 40,

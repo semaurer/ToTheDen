@@ -43,6 +43,16 @@ canvas {
   margin: auto;
   display: block;
   margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.game-score {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 17px;
+  width: 200px;
+  height: 20px;
 }
 
 .right-info {

@@ -29,6 +29,10 @@ main {
   text-align: center;
 }
 
+.left-info p {
+  font-size: 17px;
+}
+
 canvas {
   border: 1px solid black;
   margin: auto;

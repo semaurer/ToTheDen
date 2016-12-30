@@ -14,6 +14,16 @@ main {
   height: 500px;
   border: 1px solid black;
   background-color: white;
+  position: relative;
+}
+
+.left-info {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 50px;
+  left: 25px;
+  background-color: blue;
 }
 
 canvas {
@@ -21,4 +31,13 @@ canvas {
   margin: auto;
   display: block;
   margin-top: 50px;
+}
+
+.right-info {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 50px;
+  right: 25px;
+  background-color: red;
 }

@@ -61,5 +61,14 @@ canvas {
   height: 400px;
   top: 50px;
   right: 25px;
-  background-color: red;
+}
+
+.right-info h2 {
+  text-align: center;
+}
+
+.right-info a {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }

@@ -33,6 +33,11 @@ main {
   font-size: 17px;
 }
 
+.left-info img {
+  margin: 0 auto;
+  display: block;
+}
+
 canvas {
   border: 1px solid black;
   margin: auto;

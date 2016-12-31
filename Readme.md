@@ -29,6 +29,10 @@ This app will consist of a single screen with game board, game controls, and nav
 links to the Github, my LinkedIn, and the About modal.  Game controls will include
 Start, Stop, and Reset buttons.  
 
+![Game Overlay](https://github.com/semaurer/ToTheDen/blob/gh-pages/wireframes/game_overlay.png)
+
+Here is a more detailed view of the board:
+
 ![Board](https://github.com/semaurer/ToTheDen/blob/gh-pages/wireframes/board.png)
 
 ### Architecture and Technologies

@@ -27,7 +27,7 @@ In addition, this project will include:
 
 This app will consist of a single screen with game board, game controls, and nav
 links to the Github, my LinkedIn, and the About modal.  Game controls will include
-Start, Stop, and Reset buttons.  
+Start, Stop, and Reset buttons.  Here is a view of the game web page as a whole:
 
 ![Game Overlay](https://github.com/semaurer/ToTheDen/blob/gh-pages/wireframes/game_overlay.png)
 
@@ -40,7 +40,7 @@ Here is a more detailed view of the board:
 This project will be implemented with the following technologies:
 
 - Vanilla JavaScript and `jQuery` for overall structure and game logic,
-- `HTML5 Canvas` for DOM manipAdd options for different rule setsulation and rendering,
+- `HTML5 Canvas` for DOM manipulation and rendering of the game,
 - Webpack to bundle and serve up the various scripts.
 
 In addition to the webpack entry file, there will be three scripts involved in this project:
@@ -48,8 +48,8 @@ In addition to the webpack entry file, there will be three scripts involved in t
 `board.js`: this script will handle the logic for creating and updating the necessary
 HTML5 Canvas elements and rendering them to the DOM.
 
-`cell.js`: this script will handle the logic for either being an obstacle for a safe piece
-of the board when coming into contact with the bear.  
+`tile.js`: this script will handle the logic for either being an obstacle or a normal tile
+when coming into contact with the bear.  
 
 `bear.js`: this script will handle the logic for rendering the bear as it moves
 across the board

@@ -6,6 +6,7 @@ h1 {
 
 body {
   background-color: black;
+  font-family: sans-serif;
 }
 
 main {
@@ -65,6 +66,7 @@ canvas {
 
 .right-info h2 {
   text-align: center;
+  font-size: 20px;
 }
 
 .right-info a {

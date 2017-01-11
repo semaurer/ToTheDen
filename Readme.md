@@ -23,8 +23,8 @@ traverse it (when it is a log) or should perish (from an enemy).  They also have
 
 ### Tiles
 
-Tiles 35x35 pixel squares on the board, which hold logic to determine whether the bear is currently on land or
-in water.  Using a boolean for whether it is land/water as well as collisions, the bear is position is tracked
+Tiles 35x35 pixel squares on the board, which holds logic to determine whether the bear is currently on land or
+in water.  Using a boolean for whether it is land/water as well as collisions, the bear's position is tracked
 on the board.  A picture of the board can be seen below:
 
 ![image of board](https://github.com/semaurer/ToTheDen/blob/gh-pages/docs/prod_images/board_pic.png)  
@@ -32,7 +32,7 @@ on the board.  A picture of the board can be seen below:
 ### Game and Game View
 
 Using a loop which requests animation frames, the game and game view handle rendering each of the game's classes
-to the HTML 5 canvas.  The game also detects collision referencing class attributes, and utilizing a
+to the HTML5 canvas.  The game handles collisions by referencing class attributes, and utilizing a
 collision detection function which can be seen below (it detects collisions between rectangles).
 
 ![image of collision fn](https://github.com/semaurer/ToTheDen/blob/gh-pages/docs/prod_images/collision_pic.png)

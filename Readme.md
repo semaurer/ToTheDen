@@ -1,75 +1,44 @@
-## To The Den
+# To The Den
 
-### Background
+[ToTheDen live] (https://semaurer.github.io/ToTheDen/)
 
-To The Den is a browser game based on the classic; Frogger.  The goal of the game
-is to make it as far as possible while avoiding obstacles.  If a player comes in
-contact with an obstacle, their game ends and they restart from the beggining.
+To The Den is a web browser game inspired by Frogger.  It uses JavaScript with Object Oriented Programming
+to handle game logic.  It uses HTML5 Canvas to render graphics.  
 
-In this version, players will control a bear, and will be trying to make it back
-to the bear's den for hibernation.  
+## Features & Implementation
 
-### Functionality & MVP
+### The Bear
 
-In To The Den, players will be able to:
+The bear that the player controls while playing the game is tied to a class with internal attributes.  It has
+width and height to track collisions, as well as an alive state (boolean) which corresponds with graphic rendering.
 
-- [ ] Start, pause, and reset the game
-- [ ] Move the bear up, right, or left
-- [ ] Have moving obstacles that can kill the bear
-- [ ] Have a board that changes as the bear traverses upwards
+### Moving Objects and Enemies
 
-In addition, this project will include:
+Each moving object (logs and critters) are tied to a moving object class with internal attributes.  Each
+moving object has a corresponding speed as well as an enemy (boolean) to determine whether the bear can
+traverse it (when it is a log) or should perish (from an enemy).  They also have attributes corresponding to a graphics object which can be seen below.
 
-- [ ] An About modal describing the background and rules of the game
-- [ ] A production README
 
-### Wireframes
+![image of graphics object](https://github.com/semaurer/EventNite/blob/master/docs/wireframes/EventCreate.png)
 
-This app will consist of a single screen with game board, game controls, and nav
-links to the Github, my LinkedIn, and the About modal.  Game controls will include
-Start, Stop, and Reset buttons.  Here is a view of the game web page as a whole:
+### Tiles
 
-![Game Overlay](https://github.com/semaurer/ToTheDen/blob/gh-pages/wireframes/game_overlay.png)
+Tiles 35x35 pixel squares on the board, which hold logic to determine whether the bear is currently on land or
+in water.  Using a boolean for whether it is land/water as well as collisions, the bear is position is tracked
+on the board.  A picture of the board can be seen below:
 
-Here is a more detailed view of the board:
+![image of board](https://github.com/semaurer/EventNite/blob/master/docs/wireframes/ticket_selection_modal.png)  
 
-![Board](https://github.com/semaurer/ToTheDen/blob/gh-pages/wireframes/board.png)
+### Game and Game View
 
-### Architecture and Technologies
+Using a loop which requests animation frames, the game and game view handle rendering each of the game's classes
+to the HTML 5 canvas.  The game also detects collision referencing class attributes, and utilizing a
+collision detection function which can be seen below (it detects collisions between rectangles).
 
-This project will be implemented with the following technologies:
+## Future Directions for the Project
 
-- Vanilla JavaScript and `jQuery` for overall structure and game logic,
-- `HTML5 Canvas` for DOM manipulation and rendering of the game,
-- Webpack to bundle and serve up the various scripts.
+### AI
 
-In addition to the webpack entry file, there will be three scripts involved in this project:
-
-`board.js`: this script will handle the logic for creating and updating the necessary
-HTML5 Canvas elements and rendering them to the DOM.
-
-`tile.js`: this script will handle the logic for either being an obstacle or a normal tile
-when coming into contact with the bear.  
-
-`bear.js`: this script will handle the logic for rendering the bear as it moves
-across the board
-
-### Implementation Timeline
-
-**Day 1**: Setup all necessary Node modules, including getting webpack up and
-running and installed.  Create `webpack.config.js` as well as `package.json`.  
-Write a basic entry file and the bare bones of all 3 scripts outlined above.  
-Learn the basics of HTML5 Canvas.
-
-**Day 2**: Setup the board logic as well as the bear logic.  Have the bear able
-to traverse the board.
-
-**Day 3**: Setup the cell obstacle logic.  Have moving obstacles and have them end
-the game when coming in to contact with the bear.
-
-**Day 4**: Implement styling and also implement game flow butons (reset, pause, start)
-
-### Bonus features
-
-- [ ] Have powerups that allow the bear to get through certain obstacles without
-dieing.
+I would like to create an auto mode where the bear can traverse the board on it's own.  It would be able to do so
+at any speed and eventually get to speeds so fast (the game difficulty/speed increases with each traversal) that
+it could not be followed by the human eye.

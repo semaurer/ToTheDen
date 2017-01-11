@@ -51,6 +51,7 @@ a {
 
 .left-info p {
   font-size: 17px;
+  text-align: center;
 }
 
 .left-info img {
@@ -106,7 +107,7 @@ canvas {
 
 .up {
   position: absolute;
-  left: 142px;
+  left: 132px;
   top: 14px;
   margin: 0px;
   font-size: 18px;
@@ -114,7 +115,7 @@ canvas {
 
 .up-arrow {
   position: absolute;
-  left: 170px;
+  left: 160px;
   top: 0px;
   font-size: 36px;
   margin: 0px;
@@ -122,14 +123,14 @@ canvas {
 
 .left {
   position: absolute;
-  left: 80px;
+  left: 70px;
   top: 20px;
   font-size: 18px;
 }
 
 .left-arrow {
   position: absolute;
-  left: 45px;
+  left: 35px;
   top: 38px;
   font-size: 36px;
   margin: 0;
@@ -137,14 +138,14 @@ canvas {
 
 .right {
   position: absolute;
-  right: 58px;
+  right: 68px;
   top: 20px;
   font-size: 18px;
 }
 
 .right-arrow {
   position: absolute;
-  right: 22px;
+  right: 32px;
   top: 38px;
   font-size: 36px;
   margin: 0;
@@ -152,14 +153,14 @@ canvas {
 
 .down {
   position: absolute;
-  left: 130px;
+  left: 120px;
   top: 20px;
   font-size: 18px;
 }
 
 .down-arrow {
   position: absolute;
-  left: 150px;
+  left: 140px;
   bottom: 20px;
   margin: 0;
   font-size: 36px;
@@ -170,5 +171,14 @@ canvas {
   font-size: 14px;
   bottom: 5px;
   margin: 0;
-  left: 50px;
+  left: 40px;
+}
+
+.audio-toggle {
+  margin: 20px auto;
+  display: block;
+}
+
+.audio-toggle:hover {
+  cursor: pointer;
 }

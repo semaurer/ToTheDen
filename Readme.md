@@ -19,7 +19,7 @@ moving object has a corresponding speed as well as an enemy (boolean) to determi
 traverse it (when it is a log) or should perish (from an enemy).  They also have attributes corresponding to a graphics object which can be seen below.
 
 
-![image of graphics object](https://github.com/semaurer/EventNite/blob/master/docs/wireframes/EventCreate.png)
+![image of graphics object](https://github.com/semaurer/ToTheDen/blob/gh-pages/docs/prod_images/graphics_object.png)
 
 ### Tiles
 
@@ -27,13 +27,15 @@ Tiles 35x35 pixel squares on the board, which hold logic to determine whether th
 in water.  Using a boolean for whether it is land/water as well as collisions, the bear is position is tracked
 on the board.  A picture of the board can be seen below:
 
-![image of board](https://github.com/semaurer/EventNite/blob/master/docs/wireframes/ticket_selection_modal.png)  
+![image of board](https://github.com/semaurer/ToTheDen/blob/gh-pages/docs/prod_images/board_pic.png)  
 
 ### Game and Game View
 
 Using a loop which requests animation frames, the game and game view handle rendering each of the game's classes
 to the HTML 5 canvas.  The game also detects collision referencing class attributes, and utilizing a
 collision detection function which can be seen below (it detects collisions between rectangles).
+
+![image of collision fn](https://github.com/semaurer/ToTheDen/blob/gh-pages/docs/prod_images/collision_pic.png)
 
 ## Future Directions for the Project
 

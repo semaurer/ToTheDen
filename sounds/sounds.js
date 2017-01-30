@@ -20,8 +20,8 @@ class sounds {
     let audioButton = document.getElementsByClassName('audio-toggle')[0];
     if (this.muted) {
       this.BGAudio.volume = 0.2;
-      this.bearGrowl.volume = 0.1;
-      this.explosionSound.volume = 0.1;
+      this.bearGrowl.createSound("victory_growl");
+      this.explosionSound.createSound("death_explosion");
       this.muted = false;
       audioButton.innerHTML = "Mute Audio";
     } else {

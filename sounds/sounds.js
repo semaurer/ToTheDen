@@ -6,6 +6,7 @@ class sounds {
     this.bearGrowl.createSound("victory_growl");
     this.explosionSound = new Sound();
     this.explosionSound.createSound("death_explosion");
+    this.BGAudio = this.createBGAudio();
     this.setupAudioToggle();
     this.muted = false;
   }
@@ -30,6 +31,15 @@ class sounds {
       this.muted = true;
       audioButton.innerHTML = "Play Audio";
     }
+  }
+
+  createBGAudio() {
+    let BGAudio = new Audio("media/background_audio.wav");
+    BGAudio.loop = true;
+    BGAudio.volume = 0.2;
+    BGAudio.load();
+    BGAudio.play();
+    return BGAudio;
   }
 }
 
